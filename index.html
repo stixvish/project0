@@ -16,17 +16,22 @@
         <!--This links the sylesheet and the HTML document together-->
     </head>
     <body>
-        <div>
-            <a href="imageSearch.html">Image Search</a>
-            <a href="advanced.html">Advanced Search</a>
+        <div id="topBar">
+            <!--This div was created to make the top of my webpage a different color and house the links to the other webpages-->
+            <a href="imageSearch.html" class="links">Image Search</a>
+            <a href="advanced.html" class="links">Advanced Search</a>
             <!--Both of the anchor tags are references to the other websites, with the first being for searching by image and the second being for advanced searching-->
         </div>
-        <form action="https://google.com/search">
-        <!--This is the form which where our basic search queries will take place-->
-            <input type="text" name="q">
-            <!--This is where the user will type their basic Google search-->
-            <input type="submit" value="Google Search">
-            <!--Clicking this button will take the user to the search results page-->
-        </form>
+        <div id="space">
+        <!--This div was created to make space between the top bar and the Google logo-->
+        </div>
+        <img src="googleFull.png"><br>
+            <form action="https://google.com/search">
+            <!--This is the form which where our basic search queries will take place-->
+                <input type="text" name="q">
+                <!--This is where the user will type their basic Google search-->
+                <input type="submit" value="Google Search" class="buts">
+                <!--Clicking this button will take the user to the search results page-->
+            </form>
     </body>
 </html>
