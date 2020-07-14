@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--Informs the browser that the document is written in HTML-->
 <html lang="en">
-    <!--HTML tag designating that the language of this webpage is English-->
+<!--HTML tag designating that the language of this webpage is English-->
     <head>
     <!--Tag which gives browser information about website, such as the favicon and/or the styling of the webpage-->
         <title>Google Search</title>
@@ -30,11 +30,14 @@
         <div id="search">
             <form action="https://google.com/search">
             <!--This is the form which where our basic search queries will take place-->
-                <input type="text" name="q">
-                <!--This is where the user will type their basic Google search-->
-                <input type="submit" value="Google Search" class="buts">
+                <div id=sBar>
+                    <img src="search-icon.png">
+                    <input type="text" name="q" placeholder="Type your search here...">
+                    <!--This is where the user will type their basic Google search-->
+                </div>
+                <input type="submit" value="Google Search" class="buts" id="sub">
                 <!--Clicking this button will take the user to the search results page-->
-                <input type="submit" value="I'm Feeling Lucky" name="btnI" class="buts">
+                <input type="submit" value="I'm Feeling Lucky" name="btnI" class="buts" id="lucky">
                 <!--This button will take the user to the first link that appears on the search results page-->
             </form>
         </div>
