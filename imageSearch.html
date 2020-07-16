@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--Informs the browser that the document is written in HTML-->
+<html lang="en">
+<!--HTML tag designating that the language of this webpage is English-->
+    <head>
+    <!--Tag which gives browser information about website, such as the favicon and/or the styling of the webpage-->
+        <title>Google Image Search</title>
+        <!--This is the text which is displayed in the browser tab-->
+        <link rel="icon" href="googleLogo.png">
+        <!--This is to create the favicon, which is the little image displayed in the browser tab and represents the website-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--This helps establish the website as more mobile-responsive-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <!--This is a reference to Bootstrap's CSS code-->
+        <link rel="stylesheet" href="styles.css">
+        <!--This links the sylesheet and the HTML document together-->
+    </head>
+    <body>
+        <div id="topBar">
+        <!--This div was created to make the top of my webpage a different color and house the links to the other webpages-->
+            <a href="index.html" class="links">Google Search</a>
+            <a href="advanced.html" class="links">Advanced Search</a>
+            <!--Both of the anchor tags are references to the other websites, with the first being for searching by image and the second being for advanced searching-->
+        </div>
+        <div id="space">
+        <!--This div was created to make space between the top bar and the Google logo-->
+        </div>
+        <img src="googleImage.png" id=mainLogo><br>
+        <!--This is the full Google logo which is displayed on Google's website-->
+        <div id="search">
+            <form action="https://google.com/search">
+            <!--This is the form which where our basic search queries will take place-->
+                <div id=sBar>
+                    <img src="search-icon.png">
+                    <input type="hidden" name="tbm" value="isch">
+                    <input type="text" name="q" placeholder="Type your search here..." id="mainGS">
+                    <!--This is where the user will type their basic Google search-->
+                </div>
+                <input type="submit" value="Image Search" class="buts" id="sub">
+                <!--Clicking this button will take the user to the search results page-->
+            </form>
+        </div>
+    </body>
+</html>

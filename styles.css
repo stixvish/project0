@@ -17,7 +17,7 @@
     height: 132px;
   }
 }
-img[src="googleFull.png"] {
+#mainLogo {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -39,9 +39,10 @@ img[src="googleFull.png"] {
 img[src="search-icon.png"] {
   display: inline-block;
   width: 16px;
+  margin-top: -1px;
 }
 
-input[name=q] {
+#mainGS {
   display: inline-block;
   flex: 100%;
   background-color: transparent;
