@@ -1,0 +1,95 @@
+$neutral: #f2f2f2; 
+$butBorder: #c6c6c6; 
+//These are variables that I have created in order to reference these specific colors later.
+#topBar
+//This section of code will make the top bar of the webpage styled like it is on Google's website.
+{
+    background-color: $neutral;
+    text-align: right;
+    
+}
+.links 
+//This section of code will make the links spaced out from each other and colored black.
+{
+    color: black;
+    margin-right: 20px;
+}
+#space
+//This section of code will give space between the top of my website and the main logo of the website.
+{
+    height: 174px;
+}
+@media (max-height: 750px) 
+//This will make my website more mobile responsive. By reducing the size of the empty div, we reduce the space between the top of the webpage and the main logo.
+{
+    #space {
+        height: 132px;
+    }
+}
+#mainLogo 
+//This section of code makes the main logo of the webpage centered and sized properly.
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 272px;
+}
+#search 
+//This section of code will make it so that the elements within this div are centered.
+{
+    text-align: center;
+}
+#sBar
+//This section of code will create the box which surrounds the input.
+{
+    width: 582px;
+    height: 44px;
+    margin: auto;
+    border-radius: 20px;
+    border: 1px solid rgb(223, 225, 229);
+}
+img[src="search-icon.png"] 
+//This section of code styles the little magnifying glass image so that it sits in front of the form input.
+{
+    display:inline-block;
+    width: 16px;
+    margin-top: -1px;
+}
+#mainGS
+//This section of code will style the main form input so that it looks nice.
+{
+    display: inline-block;
+    flex: 100%; 
+    background-color: transparent;
+    width: 482px;
+    height: 34px;
+    outline: none;
+    margin-top: 4px;
+    border-color: transparent;
+}
+.buts
+//This section of code styles the buttons so that they appear similarly to the ones on Google's wesbite.
+{
+    background-color: $neutral;
+    border: none;
+    border-radius: 4px;
+    color: #5F6368;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin: 30px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+}
+#sub:hover 
+//This section of code will make it so that the main Google Search button becomes highlighted when a cursor hovers over it.
+{
+    border: 1px solid $butBorder;
+    margin: 30px 3px;
+}
+#lucky:hover 
+//This section of code will make it so that the "I'm feeling lucky" button becomes highlighted when a cursor hovers over it.
+{
+    border: 1px solid $butBorder;
+    margin: 30px 3px;
+}
