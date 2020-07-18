@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--Informs the browser that the document is written in HTML-->
+<html lang="en">
+<!--HTML tag designating that the language of this webpage is English-->
+    <head>
+    <!--Tag which gives browser information about website, such as the favicon and/or the styling of the webpage-->
+        <title>Advanced Google Search</title>
+        <!--This is the text which is displayed in the browser tab-->
+        <link rel="icon" href="googleLogo.png">
+        <!--This is to create the favicon, which is the little image displayed in the browser tab and represents the website-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--This helps establish the website as more mobile-responsive-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <!--This is a reference to Bootstrap's CSS code-->
+        <link rel="stylesheet" href="styles.css">
+        <!--This links the sylesheet and the HTML document together-->
+    </head>
+    <body>
+        <div id="topBarAD">
+        <!--This div was created to make the top of my webpage a different color and house the links to the other webpages-->
+            <img src="googleFull.png" id="cornerLogo">
+            <!--This logo will be in the top right of the website-->
+            <a href="index.html" class="links" id="classic">Classic Search</a>
+            <!--This anchor tag leads the user back to the main search page-->
+        </div>
+        <div id="aS">
+            <h2>Advanced Search</h2>
+        </div>
+        <div id="tabool">
+            <form action="https://google.com/search">
+        <!--This is the form which where our search queries will take place-->
+                <table>
+                    <tr id="THmain">
+                        <th id="mainTH">Find pages with...</th>
+                        <th></th>
+                        <th id="thInfo">To do this in the search box:</th>
+                    </tr>
+                    <tr class="turbo">
+                        <td class="head">
+                            <p class="dataEle">all these words:</p>
+                        </td>
+                        <td class="fieldTD">
+                            <div class="tDiv">
+                                <input type="text" class="field" name="q">
+                            </div>
+                        </td>
+                        <td class="information">
+                            <p class="dataEle pinfo">Type the important words.</p>
+                        </td>
+                    </tr>
+                    <tr class="turbo">
+                        <td class="head">
+                            <p class="dataEle">this exact word or phrase:</p>
+                        </td>
+                        <td class="fieldTD">
+                            <div class="tDiv">
+                                <input type="text" class="field" name="as_epq">
+                            </div>
+                        </td>
+                        <td class="information">
+                            <p class="dataEle pinfo">Put exact words in quotes.</p>
+                        </td>
+                    </tr>
+                    <tr class="turbo">
+                        <td class="head">
+                            <p class="dataEle">any of these words:</p>
+                        </td>
+                        <td class="fieldTD">
+                            <div class="tDiv">
+                                <input type="text" class="field" name="as_oq">
+                            </div>
+                        </td>
+                        <td class="information">
+                            <p class="dataEle pinfo">Type <q>OR</q> between all the words you want.</p>
+                        </td>
+                    </tr>
+                    <tr class="turbo">
+                        <td class="head">
+                            <p class="dataEle">none of these words:</p>
+                        </td>
+                        <td class="fieldTD">
+                            <div class="tDiv">
+                                <input type="text" class="field" name="as_eq">
+                            </div>
+                        </td>
+                        <td class="information">
+                            <p class="dataEle pinfo">Put 2 periods between the numbers and add a unit of measure.</p>
+                        </td>
+                    </tr>
+                    <tr id="last">
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Advanced Search">
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
